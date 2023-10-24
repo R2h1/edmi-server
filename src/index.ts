@@ -9,9 +9,8 @@ app.use(cors());
 app.use(koaBody());
 app.use(router.routes());
 
-app.on('error', (err, ctx: Context) => {
-  console.error(err);
-  ctx.body = `Server Error: ${err}`;
+app.on('error', (err) => {
+  console.error(JSON.stringify(err));
 });
 
 const msg = 'Hello World';

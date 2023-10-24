@@ -15,6 +15,7 @@ async function main() {
 
 main();
 
-export default {
-  User: mongoose.model('User', UserSchema)
-};
+const Users = mongoose.model('Users', UserSchema);
+
+// eslint-disable-next-line import/prefer-default-export
+export { Users };
