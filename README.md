@@ -3,5 +3,5 @@
   <img alt="license" src="https://shields.io/github/license/R2h1/edmi-server" />
 </p>
 
-### edmi-server
+# edmi-server
 edmi 的服务端
