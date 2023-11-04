@@ -3,6 +3,7 @@ import mongoose from 'mongoose';
 import { mongoPath } from '../config/base';
 
 import UserSchema from './user';
+import TemplateScheme from './template';
 
 async function main() {
   try {
@@ -16,6 +17,7 @@ async function main() {
 main();
 
 const Users = mongoose.model('Users', UserSchema);
+const Templates = mongoose.model('Templates', TemplateScheme);
 
 // eslint-disable-next-line import/prefer-default-export
-export { Users };
+export { Users, Templates };
